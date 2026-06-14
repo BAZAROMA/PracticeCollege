@@ -38,12 +38,14 @@ React + Node.js + PostgreSQL.
 
 ### 1. База данных
 
+```
 psql -U postgres -c "CREATE DATABASE task_manager;"
 psql -U postgres -d task_manager -f database/init.sql
+```
 
 ### 2. Backend
 
-`.env`
+```.env```
 
 ```
 DB_HOST=localhost
@@ -53,6 +55,8 @@ DB_USER=postgres
 DB_PASSWORD=
 
 PORT=3000
+```
+
 
 ```
 npm install
@@ -62,7 +66,6 @@ node index.js
 ### 3. Frontend
 
 ```
-/frontend
 npm install
 npm run dev
 ```
@@ -86,5 +89,5 @@ npm run dev
 
 ## Python — экспорт в CSV
 
-python export_tasks.py
+```python export_tasks.py```
 
