@@ -1,3 +1,4 @@
+const pool = require('./pool');
 
 const VALID_STATUSES = ['new', 'in_progress', 'done'];
 
